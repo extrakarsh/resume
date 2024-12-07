@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        nav {
+            background-color: #3b5323; /* Olive */
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #3b5323; /* Olive */
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        .profile-pic {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .profile-pic img {
+            width: 200px; /* Increased size */
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid #3b5323; /* Olive */
+            object-fit: cover;
+        }
+
+        .profile-info {
+            text-align: center;
+        }
+
+        .profile-info h1 {
+            font-size: 2em;
+            margin: 10px 0;
+            color: #3b5323; /* Olive */
+        }
+
+        .profile-info p {
+            margin: 5px 0;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #fff;
+            border-left: 4px solid #3b5323; /* Olive */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            color: #3b5323; /* Olive */
+            margin-bottom: 10px;
+            border-bottom: 2px solid #3b5323;
+            padding-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #3b5323; /* Olive */
+            color: white;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: square;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biodata.html" class="active">Bio-data</a></li>
+        </ul>
+    </nav>
+
+    <div id="resume-container">
+        <!-- Header Section -->
+        <header>
+            <h1>My Resume</h1>
+            <p>Personal, Academic, and Professional Highlights</p>
+        </header>
+
+        <div class="profile-pic">
+            <img src="profile.jpg" alt="Profile Picture">
+        </div>
+
+        <div class="profile-info">
+            <h1>Akarsh Rai B</h1>
+            <p class="contact">8861716335</p>
+            <p class="email">akarshraib8@gmail.com</p>
+        </div>
+
+        <!-- Objective Section -->
+        <section id="objective">
+            <h2>Objective</h2>
+            <p>
+                I aim to secure a challenging position in the field of software engineering where I can apply my skills 
+                and contribute to organizational success.
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Year</th>
+                        <th>Institution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BE</td>
+                        <td>Present</td>
+                        <td>Canara Engineering College</td>
+                    </tr>
+                    <tr>
+                        <td>12th</td>
+                        <td>2022</td>
+                        <td>St. Philomena PU College, Puttur</td>
+                    </tr>
+                    <tr>
+                        <td>10th</td>
+                        <td>2020</td>
+                        <td>Vivekananda English Medium School, Puttur</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Leadership and Team Management</li>
+                <li>Problem-Solving and Critical Thinking</li>
+                <li>Proficiency in HTML, CSS, JavaScript</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
