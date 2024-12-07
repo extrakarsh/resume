@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-data</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        nav {
+            background-color: #3b5323; /* Olive */
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #3b5323; /* Olive */
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #fff;
+            border-left: 4px solid #3b5323; /* Olive */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            color: #3b5323; /* Olive */
+            margin-bottom: 10px;
+            border-bottom: 2px solid #3b5323;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: square;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        ul li strong {
+            color: #3b5323; /* Olive */
+        }
+
+        .signature {
+            font-size: 1.2em;
+            color: #3b5323; /* Olive */
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+
+    <div id="biodata-container">
+        <!-- Header Section -->
+        <header>
+            <h1>Bio-data</h1>
+            <p>Personal and Professional Information</p>
+        </header>
+
+        <!-- Personal Information Section -->
+        <section class="personal-info">
+            <h2>Personal Information</h2>
+            <ul>
+                <li><strong>Name:</strong> Akarsh Rai B</li>
+                <li><strong>Date of Birth:</strong> 08th February 2004</li>
+                <li><strong>Gender:</strong> Male</li>
+                <li><strong>Nationality:</strong> Indian</li>
+                <li><strong>Marital Status:</strong> Single</li>
+                <li><strong>Contact:</strong> 8861716335</li>
+                <li><strong>Email:</strong> akarshraib8@gmail.com</li>
+            </ul>
+        </section>
+
+        <!-- Professional Information Section -->
+        <section class="professional-info">
+            <h2>Professional Information</h2>
+            <ul>
+                <li><strong>Field:</strong> Computer Science and Engineering</li>
+                <li><strong>Skills:</strong> Leadership, Problem-solving, Programming</li>
+                <li><strong>Languages Known:</strong> English, Hindi, Kannada, Tulu</li>
+            </ul>
+        </section>
+
+        <!-- Declaration Section -->
+        <section class="declaration">
+            <h2>Declaration</h2>
+            <p>
+                I hereby declare that the above-mentioned details are true to the best of my knowledge and belief.
+            </p>
+            <p class="signature">Akarsh Rai B</p>
+        </section>
+    </div>
+</body>
+</html>
